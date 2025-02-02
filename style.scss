@@ -272,7 +272,7 @@ $bg-primary: #e8e2d4;
       padding-right: 10px;
       font-size: 20px;
       @include text-gazpacho-bold;
-      text-align: right;
+      text-align: center;
     }
 
     &__img {
@@ -289,7 +289,8 @@ $bg-primary: #e8e2d4;
 
     &__packshot {
       @include img;
-      max-width: 50%;
+      max-width: 60%;
+      padding-left: 45px;
     }
   }
 
@@ -494,7 +495,15 @@ $bg-primary: #e8e2d4;
       padding-right: 10px;
       z-index: 1;
       font-size: 13px;
-      margin-top: -50px;
+
+      &--dark {
+        background-color: black;
+        color: white;
+        clip-path: polygon(0 0%, 100% 14%, 100% 100%, 0 89%);
+        padding-top: 30%;
+        padding-bottom: 90px;
+        margin-top: -38%;
+      }
     }
 
     &__day-night-recipe-content-ingredients-list {
@@ -524,6 +533,7 @@ $bg-primary: #e8e2d4;
       &--bottle {
         max-width: 50%;
         margin-bottom: 30px;
+        padding-left: 30px;
       }
     }
 
@@ -764,6 +774,7 @@ $bg-primary: #e8e2d4;
   @media screen and (min-width: 600px) {
     .es-title {
       font-size: 46px;
+      padding-left: 40px;
     }
 
     .es-video__subtitle-second {
@@ -817,6 +828,10 @@ $bg-primary: #e8e2d4;
     .es-possibilities {
       margin: 30px 0 0;
       padding-top: 75px;
+
+      &__packshot {
+        padding-left: 0;
+      }
 
       &__title-container {
         top: 10px;
@@ -882,6 +897,7 @@ $bg-primary: #e8e2d4;
 
         &--bottle {
           max-width: 25%;
+          padding-left: 0;
         }
 
         &--coctail {
@@ -1058,10 +1074,6 @@ $bg-primary: #e8e2d4;
 
       &__text {
         max-width: 46%;
-
-        &--first {
-        }
-
         &--second {
           max-width: 63%;
         }
@@ -1094,12 +1106,6 @@ $bg-primary: #e8e2d4;
       }
 
       &__day-night-recipe-content {
-        &--first {
-          margin-top: -105px;
-        }
-      }
-
-      &__day-night-recipe-content {
         &--dark {
           margin-top: 0;
           position: absolute;
@@ -1107,6 +1113,9 @@ $bg-primary: #e8e2d4;
           left: 0;
           z-index: 1;
           color: $secondary;
+          background-color: transparent;
+          padding-top: 0;
+          clip-path: none;
         }
       }
     }
@@ -1159,7 +1168,7 @@ $bg-primary: #e8e2d4;
       }
 
       &__right {
-        margin-left: -180px;
+        margin-left: -160px;
         margin-top: 100px;
       }
 
@@ -1187,8 +1196,8 @@ $bg-primary: #e8e2d4;
         }
 
         &__text {
-          font-size: 22px;
-          width: 85%;
+          font-size: 20px;
+          width: 92%;
           line-height: 1.25;
         }
       }
@@ -1204,47 +1213,47 @@ $bg-primary: #e8e2d4;
       }
 
       &__text {
-        width: 440px;
-        font-size: 22px;
+        width: 455px;
+        font-size: 20px;
       }
     }
 
     .es-video {
       &__text {
         font-size: 21px;
-        max-width: 80%;
+        max-width: 84%;
 
         &--second {
-          max-width: 75%;
+          max-width: 79%;
         }
       }
     }
 
     .es-recipes {
       &__day-night-title {
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 30px;
       }
 
       &__day-night-description {
-        font-size: 22px;
+        font-size: 20px;
       }
 
       &__day-night-group {
-        max-width: 455px;
-        margin-left: 22%;
+        max-width: 464px;
+        margin-left: 8%;
       }
 
       &__day-night-recipe-content {
         padding-left: 30px;
         padding-right: 30px;
-        font-size: 22px;
+        font-size: 20px;
       }
 
       &__day-night-label {
         &--first {
-          top: 10.4%;
-          left: 52%;
+          top: 8%;
+          left: 39%;
         }
         &--second {
           top: -0.7%;
@@ -1277,14 +1286,14 @@ $bg-primary: #e8e2d4;
       }
 
       &__text {
-        font-size: 20px;
+        font-size: 19px;
 
         &--first {
-          max-width: 36%;
+          max-width: 54%;
         }
 
         &--third {
-          max-width: 73%;
+          max-width: 83%;
           margin-bottom: 70px;
         }
       }
@@ -1295,7 +1304,7 @@ $bg-primary: #e8e2d4;
       }
 
       &__group-list-item-description {
-        font-size: 20px;
+        font-size: 18px;
       }
 
       &__group {
@@ -1326,7 +1335,6 @@ $bg-primary: #e8e2d4;
 
       &__img {
         max-width: 100%;
-        margin-left: -11%;
 
         &--syrups {
           margin: 0 auto;
@@ -1335,7 +1343,7 @@ $bg-primary: #e8e2d4;
     }
 
     .es-triple {
-      margin-top: -100px;
+      margin-top: -60px;
 
       &__desc-mobile {
         &--first,
@@ -1345,8 +1353,8 @@ $bg-primary: #e8e2d4;
         }
 
         &--first {
-          top: 12%;
-          left: 22%;
+          top: 11%;
+          left: 14%;
         }
 
         &--second {
@@ -1355,8 +1363,8 @@ $bg-primary: #e8e2d4;
         }
 
         &--third {
-          top: 64%;
-          left: 13%;
+          top: 63%;
+          left: 6%;
         }
       }
     }
@@ -1365,25 +1373,25 @@ $bg-primary: #e8e2d4;
   @media screen and (min-width: 1200px) {
     .es-kv {
       height: 100%;
-      min-height: 1024px;
+      min-height: 850px;
 
       &__title-group {
-        max-width: 614px;
-        left: 5%;
-        top: 3%;
+        max-width: 524px;
+        left: 4%;
+        top: -3%;
       }
 
       &__title {
-        font-size: 56px;
+        font-size: 48px;
       }
 
       &__subtitle {
-        font-size: 22px;
+        font-size: 20px;
       }
 
       &__text {
         font-size: 20px;
-        width: 72%;
+        width: 94%;
         font-size: 21px;
         line-height: 1.35;
       }
@@ -1404,10 +1412,10 @@ $bg-primary: #e8e2d4;
 
       &__img {
         max-width: 100%;
-        margin-left: -12%;
 
         &--syrups {
           margin: 0 auto;
+          max-width: 90%;
         }
       }
     }
@@ -1420,7 +1428,12 @@ $bg-primary: #e8e2d4;
 
     .es-lemonade {
       &__title {
-        font-size: 70px;
+        font-size: 40px;
+        text-align: left;
+
+        &--second {
+          font-size: 55px;
+        }
       }
     }
 
@@ -1451,7 +1464,9 @@ $bg-primary: #e8e2d4;
 
       &__subtitle {
         margin-top: 100px;
-        margin-right: 102px;
+        margin-left: auto;
+        margin-right: 50px;
+        max-width: 500px;
         font-size: 45px;
       }
 
@@ -1482,20 +1497,9 @@ $bg-primary: #e8e2d4;
     }
 
     .es-lemonade {
-      margin-top: -220px;
-
-      &__title {
-        margin-left: -181px;
-
-        &--second {
-          margin-left: 240px;
-        }
-      }
+      margin-top: -150px;
 
       &__content {
-        &--1 {
-        }
-
         &--2 {
           margin-top: -270px;
         }
@@ -1526,7 +1530,7 @@ $bg-primary: #e8e2d4;
         &--first,
         &--second,
         &--third {
-          font-size: 170px;
+          font-size: 160px;
         }
       }
     }
@@ -1534,10 +1538,6 @@ $bg-primary: #e8e2d4;
 
   @media screen and (min-width: 1400px) {
     .es-lemonade {
-      &__title {
-        font-size: 90px;
-      }
-
       &__subtitle {
         font-size: 55px;
       }

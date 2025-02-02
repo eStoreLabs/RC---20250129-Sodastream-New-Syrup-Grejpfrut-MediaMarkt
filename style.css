@@ -202,7 +202,7 @@
   font-size: 20px;
   font-family: "Gazpacho-Bold";
   font-weight: 700;
-  text-align: right;
+  text-align: center;
 }
 #es-rc-content.es-rc .es-possibilities__img {
   max-width: 100%;
@@ -219,7 +219,8 @@
   margin: 0 auto;
   display: block;
   max-width: 100%;
-  max-width: 50%;
+  max-width: 60%;
+  padding-left: 45px;
 }
 #es-rc-content.es-rc .es-photo__img {
   max-width: 90%;
@@ -395,7 +396,15 @@
   padding-right: 10px;
   z-index: 1;
   font-size: 13px;
-  margin-top: -50px;
+}
+#es-rc-content.es-rc .es-recipes__day-night-recipe-content--dark {
+  background-color: black;
+  color: white;
+  -webkit-clip-path: polygon(0 0%, 100% 14%, 100% 100%, 0 89%);
+          clip-path: polygon(0 0%, 100% 14%, 100% 100%, 0 89%);
+  padding-top: 30%;
+  padding-bottom: 90px;
+  margin-top: -38%;
 }
 #es-rc-content.es-rc .es-recipes__day-night-recipe-content-ingredients-list {
   padding-left: 20px;
@@ -421,6 +430,7 @@
 #es-rc-content.es-rc .es-lemonade__image--bottle {
   max-width: 50%;
   margin-bottom: 30px;
+  padding-left: 30px;
 }
 #es-rc-content.es-rc .es-lemonade__content {
   padding-top: 30px;
@@ -609,6 +619,7 @@
 @media screen and (min-width: 600px) {
   #es-rc-content.es-rc .es-title {
     font-size: 46px;
+    padding-left: 40px;
   }
   #es-rc-content.es-rc .es-video__subtitle-second {
     font-size: 36px;
@@ -644,6 +655,9 @@
   #es-rc-content.es-rc .es-possibilities {
     margin: 30px 0 0;
     padding-top: 75px;
+  }
+  #es-rc-content.es-rc .es-possibilities__packshot {
+    padding-left: 0;
   }
   #es-rc-content.es-rc .es-possibilities__title-container {
     top: 10px;
@@ -693,6 +707,7 @@
   }
   #es-rc-content.es-rc .es-lemonade__image--bottle {
     max-width: 25%;
+    padding-left: 0;
   }
   #es-rc-content.es-rc .es-lemonade__image--coctail {
     max-width: 100%;
@@ -844,9 +859,6 @@
   #es-rc-content.es-rc .es-recipes__img--night-mobile {
     display: none;
   }
-  #es-rc-content.es-rc .es-recipes__day-night-recipe-content--first {
-    margin-top: -105px;
-  }
   #es-rc-content.es-rc .es-recipes__day-night-recipe-content--dark {
     margin-top: 0;
     position: absolute;
@@ -854,6 +866,10 @@
     left: 0;
     z-index: 1;
     color: #ffffff;
+    background-color: transparent;
+    padding-top: 0;
+    -webkit-clip-path: none;
+            clip-path: none;
   }
 }
 @media screen and (min-width: 998px) {
@@ -894,7 +910,7 @@
     top: 43px;
   }
   #es-rc-content.es-rc .es-possibilities__right {
-    margin-left: -180px;
+    margin-left: -160px;
     margin-top: 100px;
   }
   #es-rc-content.es-rc .es-possibilities__title {
@@ -914,8 +930,8 @@
     margin-top: -120px;
   }
   #es-rc-content.es-rc .es-possibilities .es-possibilities__text {
-    font-size: 22px;
-    width: 85%;
+    font-size: 20px;
+    width: 92%;
     line-height: 1.25;
   }
   #es-rc-content.es-rc .es-possibilities__img {
@@ -925,35 +941,35 @@
     line-height: 1;
   }
   #es-rc-content.es-rc .es-info__text {
-    width: 440px;
-    font-size: 22px;
+    width: 455px;
+    font-size: 20px;
   }
   #es-rc-content.es-rc .es-video__text {
     font-size: 21px;
-    max-width: 80%;
+    max-width: 84%;
   }
   #es-rc-content.es-rc .es-video__text--second {
-    max-width: 75%;
+    max-width: 79%;
   }
   #es-rc-content.es-rc .es-recipes__day-night-title {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 30px;
   }
   #es-rc-content.es-rc .es-recipes__day-night-description {
-    font-size: 22px;
+    font-size: 20px;
   }
   #es-rc-content.es-rc .es-recipes__day-night-group {
-    max-width: 455px;
-    margin-left: 22%;
+    max-width: 464px;
+    margin-left: 8%;
   }
   #es-rc-content.es-rc .es-recipes__day-night-recipe-content {
     padding-left: 30px;
     padding-right: 30px;
-    font-size: 22px;
+    font-size: 20px;
   }
   #es-rc-content.es-rc .es-recipes__day-night-label--first {
-    top: 10.4%;
-    left: 52%;
+    top: 8%;
+    left: 39%;
   }
   #es-rc-content.es-rc .es-recipes__day-night-label--second {
     top: -0.7%;
@@ -977,13 +993,13 @@
     left: 23%;
   }
   #es-rc-content.es-rc .es-lemonade__text {
-    font-size: 20px;
+    font-size: 19px;
   }
   #es-rc-content.es-rc .es-lemonade__text--first {
-    max-width: 36%;
+    max-width: 54%;
   }
   #es-rc-content.es-rc .es-lemonade__text--third {
-    max-width: 73%;
+    max-width: 83%;
     margin-bottom: 70px;
   }
   #es-rc-content.es-rc .es-lemonade__group-title {
@@ -991,7 +1007,7 @@
     font-size: 20px;
   }
   #es-rc-content.es-rc .es-lemonade__group-list-item-description {
-    font-size: 20px;
+    font-size: 18px;
   }
   #es-rc-content.es-rc .es-lemonade__group {
     max-width: 500px;
@@ -1013,49 +1029,48 @@
   }
   #es-rc-content.es-rc .es-photo__img {
     max-width: 100%;
-    margin-left: -11%;
   }
   #es-rc-content.es-rc .es-photo__img--syrups {
     margin: 0 auto;
   }
   #es-rc-content.es-rc .es-triple {
-    margin-top: -100px;
+    margin-top: -60px;
   }
   #es-rc-content.es-rc .es-triple__desc-mobile--first, #es-rc-content.es-rc .es-triple__desc-mobile--second, #es-rc-content.es-rc .es-triple__desc-mobile--third {
     font-size: 160px;
   }
   #es-rc-content.es-rc .es-triple__desc-mobile--first {
-    top: 12%;
-    left: 22%;
+    top: 11%;
+    left: 14%;
   }
   #es-rc-content.es-rc .es-triple__desc-mobile--second {
     top: 44%;
     left: 40%;
   }
   #es-rc-content.es-rc .es-triple__desc-mobile--third {
-    top: 64%;
-    left: 13%;
+    top: 63%;
+    left: 6%;
   }
 }
 @media screen and (min-width: 1200px) {
   #es-rc-content.es-rc .es-kv {
     height: 100%;
-    min-height: 1024px;
+    min-height: 850px;
   }
   #es-rc-content.es-rc .es-kv__title-group {
-    max-width: 614px;
-    left: 5%;
-    top: 3%;
+    max-width: 524px;
+    left: 4%;
+    top: -3%;
   }
   #es-rc-content.es-rc .es-kv__title {
-    font-size: 56px;
+    font-size: 48px;
   }
   #es-rc-content.es-rc .es-kv__subtitle {
-    font-size: 22px;
+    font-size: 20px;
   }
   #es-rc-content.es-rc .es-kv__text {
     font-size: 20px;
-    width: 72%;
+    width: 94%;
     font-size: 21px;
     line-height: 1.35;
   }
@@ -1070,16 +1085,20 @@
   }
   #es-rc-content.es-rc .es-photo__img {
     max-width: 100%;
-    margin-left: -12%;
   }
   #es-rc-content.es-rc .es-photo__img--syrups {
     margin: 0 auto;
+    max-width: 90%;
   }
   #es-rc-content.es-rc .es-video__subtitle {
     font-size: 30px;
   }
   #es-rc-content.es-rc .es-lemonade__title {
-    font-size: 70px;
+    font-size: 40px;
+    text-align: left;
+  }
+  #es-rc-content.es-rc .es-lemonade__title--second {
+    font-size: 55px;
   }
   #es-rc-content.es-rc .es-info__title {
     font-size: 46px;
@@ -1100,7 +1119,9 @@
   }
   #es-rc-content.es-rc .es-possibilities__subtitle {
     margin-top: 100px;
-    margin-right: 102px;
+    margin-left: auto;
+    margin-right: 50px;
+    max-width: 500px;
     font-size: 45px;
   }
   #es-rc-content.es-rc .es-possibilities__title-container {
@@ -1120,13 +1141,7 @@
     font-size: 18px;
   }
   #es-rc-content.es-rc .es-lemonade {
-    margin-top: -220px;
-  }
-  #es-rc-content.es-rc .es-lemonade__title {
-    margin-left: -181px;
-  }
-  #es-rc-content.es-rc .es-lemonade__title--second {
-    margin-left: 240px;
+    margin-top: -150px;
   }
   #es-rc-content.es-rc .es-lemonade__content--2 {
     margin-top: -270px;
@@ -1144,13 +1159,10 @@
     margin-right: 9%;
   }
   #es-rc-content.es-rc .es-triple__desc-mobile--first, #es-rc-content.es-rc .es-triple__desc-mobile--second, #es-rc-content.es-rc .es-triple__desc-mobile--third {
-    font-size: 170px;
+    font-size: 160px;
   }
 }
 @media screen and (min-width: 1400px) {
-  #es-rc-content.es-rc .es-lemonade__title {
-    font-size: 90px;
-  }
   #es-rc-content.es-rc .es-lemonade__subtitle {
     font-size: 55px;
   }
